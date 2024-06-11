@@ -1,20 +1,29 @@
 version: "3"
 services:
   ar-api:
-    image: captain1537l/ar
+    image: captain1537l/ar:s1
     ports:
       - "2002:2002"
     networks:
       - springboot-db-net
     depends_on:
       - rhode
+      - ardb
     
   rhode:
-    image: captain1537l/rhode-state-api
+    image: captain1537l/rhode:s1
     ports:
       - "1999:1999" 
     networks:
       - springboot-db-net
+    
+  ardb:
+    image: mysql:latest
+    networks:
+      - springboot-db-net
+    environment:
+      - MYSQL_ROOT_PASSWORD=abcd
+      - MYSQL_DATABASE=ardb
 
 networks:
   springboot-db-net:

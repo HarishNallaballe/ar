@@ -8,14 +8,17 @@ app:
        
 spring:
      datasource:
-         driver-class-name: com.mysql.cj.jdbc.Driver
          password: abcd
-         url: jdbc:mysql://localhost:3306/harish
+         url: jdbc:mysql://ardb:3306/ardb
          username: root
+         driverClassName: com.mysql.cj.jdbc.Driver
      jpa:
         hibernate:
            ddl-auto: update
            show-sql: true
+           sql:
+             init:
+               mode: always
      application:
             name : AR-API
    
