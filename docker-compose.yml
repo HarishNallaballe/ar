@@ -1,0 +1,20 @@
+version: "3"
+services:
+  ar-api:
+    image: captain1537l/ar
+    ports:
+      - "2002:2002"
+    networks:
+      - springboot-db-net
+    depends_on:
+      - rhode
+    
+  rhode:
+    image: captain1537l/rhode-state-api
+    ports:
+      - "1999:1999" 
+    networks:
+      - springboot-db-net
+
+networks:
+  springboot-db-net:

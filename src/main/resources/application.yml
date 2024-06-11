@@ -1,0 +1,21 @@
+server:
+  port: 2002
+
+app:
+  messages:
+       RegistrationSuccess : Application Registration Success
+       RegistrationFailed : Application Registration was Failed, This HIS Plans for only Rhode Island Citizen
+       
+spring:
+     datasource:
+         driver-class-name: com.mysql.cj.jdbc.Driver
+         password: abcd
+         url: jdbc:mysql://localhost:3306/harish
+         username: root
+     jpa:
+        hibernate:
+           ddl-auto: update
+           show-sql: true
+     application:
+            name : AR-API
+   

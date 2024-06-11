@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "spring.boot.datasource.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.boot.datasource.driver-class-name'"
+  },
+  {
+    "name": "spring.boot.datasource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.boot.datasource.password'"
+  },
+  {
+    "name": "spring.boot.datasource.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.boot.datasource.url'"
+  },
+  {
+    "name": "spring.boot.datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.boot.datasource.username'"
+  },
+  {
+    "name": "spring.jpa.hibernate.show-sql",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.show-sql'"
+  },
+  {
+    "name": "spring.boot.jpa.hibernate.ddl-auto",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.boot.jpa.hibernate.ddl-auto'"
+  },
+  {
+    "name": "spring.boot.jpa.hibernate.show-sql",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.boot.jpa.hibernate.show-sql'"
+  }
+]}
