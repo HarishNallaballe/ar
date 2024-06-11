@@ -1,7 +1,7 @@
 FROM openjdk:17-jdk-slim
 
-COPY target/rhode-state.jar rhode-state.jar
+COPY target/AR-API-0.0.1-SNAPSHOT.jar AR-API-0.0.1-SNAPSHOT.jar
 
-EXPOSE 1999
+EXPOSE 2002
 
-ENTRYPOINT ["java", "-jar", "rhode-state.jar"]
+ENTRYPOINT ["java", "-jar", "AR-API-0.0.1-SNAPSHOT.jar"]
